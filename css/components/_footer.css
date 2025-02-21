@@ -1,0 +1,29 @@
+.footer__inner{
+    margin-top: 170px;
+    margin-bottom: 52px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+}
+.footer__Akif{
+    color:var(--secondary-);
+    font-size: 21px;
+}
+.footer__list{
+    color: var(--main-black-);
+    display: flex;  
+    gap: 31.73px;
+    
+}
+.footer__link{
+    color: var(--main-black-);
+    transition: opacity .4s;
+}
+.footer__link:hover{
+    opacity: .6;
+
+}
+.footer__link:focus{
+    border: 1px solid var(--main-black-);
+    border-radius: 6px;
+}

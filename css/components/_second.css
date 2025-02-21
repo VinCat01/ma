@@ -1,0 +1,90 @@
+.second {
+    margin-top: 223px;
+}
+
+.second__text {
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: -1.8px;
+}
+
+.text_hello {
+    font-size: 60px;
+    line-height: 0.97;
+    max-width: 360px;
+
+}
+
+.text_subtext {
+    font-size: 32px;
+    color: var(--main-grey-);
+    max-width: 580px;
+    margin-top: 64px;
+    line-height: 1.17;
+}
+
+.strelka_vniz {
+    margin-top: 116px;
+}
+
+.second__list {
+    margin-top: 114px;
+
+}
+
+.list_name {
+    font-size: 18px;
+    line-height: 1.21;
+    font-weight: 500;
+
+}
+
+.list_text {
+    margin-top: 25px;
+    width: 356px;
+    height: 169px;
+    font-size: 18px;
+    line-height: 1.35;
+    letter-spacing: -0.54px;
+
+}
+
+span.list_text {
+    max-width: 315px;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.42px;
+    color: var(--main-grey-);
+}
+
+.list_link {
+    text-decoration:underline;
+    font-weight: 500;
+    margin-top: 167px;
+    font-size: 18px;
+    line-height: 1.21;
+
+}
+.list_link:hover{
+    text-decoration:underline var(--secondary-);
+
+}
+.second__div{
+    display: flex;
+    justify-content: space-between;
+}
+.list_img{
+    max-width: 640px;
+    max-height: 365px;
+}
+.list_border{
+    margin-top: 106px ;
+}
+.list_link-gray{
+    text-decoration:underline;
+    font-weight: 500;
+    margin-top: 167px;
+    font-size: 18px;
+    line-height: 1.21;
+    color: var(--main-grey-);
+}
