@@ -173,8 +173,43 @@
         margin-top: 300px;
         gap: 90px;
     }
-    .main__contact{
+
+    .main__contact {
         margin-top: 300px;
     }
 
+}
+
+@media (max-width:390px) {
+    .header_inner {
+        font-size: 12px;
+    }
+
+    .main__picture {
+        margin: 110px auto 0px;
+    }
+
+    .main__skils {
+        margin-top: 300px;
+        gap: 90px;
+    }
+
+    .main__contact {
+        margin-top: 300px;
+    }
+
+    .contact__text {
+        font-size: 15px;
+    }
+
+    .contact__mail {
+        font-size: 15px;
+    }
+
+    .contact__resume {
+        margin-right: 104px;
+        font-size: 12px;
+    }
+
+    
 }

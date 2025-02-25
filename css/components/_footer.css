@@ -27,3 +27,21 @@
     border: 1px solid var(--main-black-);
     border-radius: 6px;
 }
+@media (max-width:390px) {
+    .footer__Akif {
+        font-size: 15px;
+    }
+
+    .footer__nav {
+        font-size: 15px;
+    }
+
+    .footer__inner {
+        margin-top: 100px;
+        margin-bottom: 52px;
+        display: flex;
+        justify-content: space-between;
+        font-weight: 500;
+    }
+
+}
