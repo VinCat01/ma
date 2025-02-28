@@ -50,7 +50,7 @@
 
 .main__skils {
     margin-top: 118px;
-    gap: 63px;
+    gap: 90px;
     max-width: 623px;
     max-height: 54px;
     display: flex;
@@ -204,10 +204,11 @@
 
     .contact__mail {
         font-size: 15px;
+        font-weight: 600;
     }
 
     .contact__resume {
-        margin-right: 104px;
+        margin-right: 118px;
         font-size: 12px;
     }
 
