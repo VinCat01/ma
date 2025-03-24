@@ -1,9 +1,9 @@
 .hamburger-menu {
-    position: relative; /* Для позиционирования иконки гамбургера */
+    position: relative;
     display: flex;
-    justify-content: flex-end; /* Сдвигаем иконку вправо */
+    justify-content: flex-end; 
     align-items: center;
-    padding: 10px; /* Отступы от края экрана */
+    padding: 10px;
   }
   
   .hamburger-icon {
@@ -22,11 +22,11 @@
     content: '';
     display: block;
     height: 4px;
-    background-color: #333; /* Цвет полосок */
+    background-color: #333; 
     transition: all 0.3s ease-in-out;
   }
   
-  /* Анимация при открытии меню (добавляем класс .open) */
+
   .hamburger-icon.open::before {
     transform: translateY(10px) rotate(45deg);
   }
@@ -40,22 +40,22 @@
   }
   
   .menu-items {
-    position: absolute; /* Абсолютное позиционирование для выпадающего меню */
-    top: 100%; /* Под иконкой гамбургера */
+    position: absolute;
+    top: 100%;
     right: 0;
-    background-color: #f9f9f9; /* Цвет фона меню */
-    list-style: none; /* Убираем маркеры списка */
+    background-color: #f9f9f9; 
+    list-style: none;
     padding: 10px;
     margin: 0;
-    width: 200px; /* Ширина меню */
+    width: 200px; 
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тень для меню */
-    transform: translateX(110%); /* Скрываем меню за пределами экрана */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    transform: translateX(110%); 
     transition: transform 0.3s ease-in-out;
-    z-index: 10; /* Чтобы меню было над другими элементами */
+    z-index: 10;
   }
   
-  /* Показываем меню, когда добавляем класс .open */
+
   .menu-items.open {
     transform: translateX(0);
   }
@@ -68,7 +68,7 @@
     font-size: 20px;
     text-decoration: none;
     color: #333;
-    display: block; /* Чтобы ссылка занимала всю ширину li */
+    display: block; 
     padding: 5px;
   }
   
@@ -76,7 +76,7 @@
     background-color: #ddd;
   }
   
-  /* Скрываем гамбургер меню на больших экранах */
+
   @media (min-width: 768px) {
     .hamburger-menu {
       display: none;

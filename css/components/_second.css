@@ -139,6 +139,7 @@ span.list_text {
 @media (max-width:390px) {
     .list_text {
         max-width: 1000px;
+        font-size: 17px;
     }
 
     .list_img {
