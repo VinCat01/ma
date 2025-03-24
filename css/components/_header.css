@@ -45,3 +45,8 @@ transition: opacity .4s;
     }
 
 }
+@media (max-width: 768px) {
+    .header__nav {
+      display: none;
+    }
+  }

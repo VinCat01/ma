@@ -27,6 +27,7 @@
     border: 1px solid var(--main-black-);
     border-radius: 6px;
 }
+
 @media (max-width:390px) {
     .footer__Akif {
         font-size: 15px;

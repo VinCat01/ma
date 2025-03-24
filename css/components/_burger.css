@@ -1,31 +1,84 @@
 .hamburger-menu {
+    position: relative; /* Для позиционирования иконки гамбургера */
     display: flex;
+    justify-content: flex-end; /* Сдвигаем иконку вправо */
     align-items: center;
-}
-
-.hamburger-icon {
+    padding: 10px; /* Отступы от края экрана */
+  }
+  
+  .hamburger-icon {
     width: 30px;
-    height: 3px;
-    background-color: #333;
-    margin-right: 10px;
-}
-
-.menu-items {
-    display: none;
-    list-style: none;
-    padding: 0;
-}
-
-.menu-items.active {
+    height: 25px;
+    position: relative;
+    cursor: pointer;
     display: flex;
-}
-
-.menu-items li {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .hamburger-icon::before,
+  .hamburger-icon::after,
+  .hamburger-icon span {
+    content: '';
+    display: block;
+    height: 4px;
+    background-color: #333; /* Цвет полосок */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Анимация при открытии меню (добавляем класс .open) */
+  .hamburger-icon.open::before {
+    transform: translateY(10px) rotate(45deg);
+  }
+  
+  .hamburger-icon.open::after {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+  
+  .hamburger-icon.open span {
+    opacity: 0;
+  }
+  
+  .menu-items {
+    position: absolute; /* Абсолютное позиционирование для выпадающего меню */
+    top: 100%; /* Под иконкой гамбургера */
+    right: 0;
+    background-color: #f9f9f9; /* Цвет фона меню */
+    list-style: none; /* Убираем маркеры списка */
+    padding: 10px;
+    margin: 0;
+    width: 200px; /* Ширина меню */
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тень для меню */
+    transform: translateX(110%); /* Скрываем меню за пределами экрана */
+    transition: transform 0.3s ease-in-out;
+    z-index: 10; /* Чтобы меню было над другими элементами */
+  }
+  
+  /* Показываем меню, когда добавляем класс .open */
+  .menu-items.open {
+    transform: translateX(0);
+  }
+  
+  .menu-items li {
     margin-bottom: 10px;
-}
-
-.menu-items a {
+  }
+  
+  .menu-items a {
+    font-size: 20px;
     text-decoration: none;
-    background-color: #333;
-
-}
+    color: #333;
+    display: block; /* Чтобы ссылка занимала всю ширину li */
+    padding: 5px;
+  }
+  
+  .menu-items a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Скрываем гамбургер меню на больших экранах */
+  @media (min-width: 768px) {
+    .hamburger-menu {
+      display: none;
+    }
+  }
