@@ -135,6 +135,9 @@
         margin: auto;
         font-size: 35px;
     }
+    .main__software{
+        margin-top: 20px;
+    }
 
     .main__subtext {
         font-size: 21px;
